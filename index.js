@@ -281,57 +281,98 @@ myButton.onclick = function(){
 // let discount = purchaseAmount >= 100 ? 10 : 0 
 // console.log(`Your total is ${purchaseAmount - purchaseAmount *(discount/100)}`);
 
-SWITCH instead of if else - makes it less rep
+// SWITCH instead of if else - makes it less rep
 
-let day = 2;
+// let day = 2;
 
-switch(day){
-    case 1: 
-        console.log("It is Monday");
-        break;
-    case 2: 
-        console.log("It is Tuesday");
-        break;
-    case 3: 
-        console.log("It is Wednesday");
-        break;
-    case 4: 
-        console.log("It is Thursday");
-        break;
-    case 5: 
-        console.log("It is Friday");
-        break;
-    case 6: 
-        console.log("It is Saturday");
-        break;
-    case 7: 
-        console.log("It is Sunday");
-        break;
-    default:
-        console.log(`${day} is not a day`);
-}
+// switch(day){
+//     case 1: 
+//         console.log("It is Monday");
+//         break;
+//     case 2: 
+//         console.log("It is Tuesday");
+//         break;
+//     case 3: 
+//         console.log("It is Wednesday");
+//         break;
+//     case 4: 
+//         console.log("It is Thursday");
+//         break;
+//     case 5: 
+//         console.log("It is Friday");
+//         break;
+//     case 6: 
+//         console.log("It is Saturday");
+//         break;
+//     case 7: 
+//         console.log("It is Sunday");
+//         break;
+//     default:
+//         console.log(`${day} is not a day`);
+// }
 
-let testScore = 32;
-let letterGrade;
+// let testScore = 32;
+// let letterGrade;
 
-switch(true){
-    case testScore >= 90:
-        letterGrade = "A";
-        break;
-    case testScore >= 80:
-        letterGrade = "B";
-        break;
-    case testScore >= 70:
-        letterGrade = "C";
-        break;
-    case testScore >= 60:
-        letterGrade = "D";
-        break;
-    case testScore >= 50:
-        letterGrade = "Your grade is: E";
-        break;
-    default: 
-        letterGrade = "F";
-}
+// switch(true){
+//     case testScore >= 90:
+//         letterGrade = "A";
+//         break;
+//     case testScore >= 80:
+//         letterGrade = "B";
+//         break;
+//     case testScore >= 70:
+//         letterGrade = "C";
+//         break;
+//     case testScore >= 60:
+//         letterGrade = "D";
+//         break;
+//     case testScore >= 50:
+//         letterGrade = "Your grade is: E";
+//         break;
+//     default: 
+//         letterGrade = "F";
+// }
 
-console.log(letterGrade)
+// console.log(letterGrade)
+
+// string methods = allow you to manipulate and work with text (strings)
+
+let userName = "Mako";
+
+// userName.indexOf("o");
+// console.log(userName.indexOf("o"));
+
+// console.log(userName.length);
+
+// userName.toLowerCase
+// userName.toUpperCase
+
+// string slicing = creating a substring   
+//                  from a portion of another String
+
+                 string.slice(start, end)
+
+const fullName = "Broseph Code";
+
+let firstName = fullName.slice(0, 3);
+let lastName = fullName.slice(4);
+
+let firstChar = fullName.slice(0, 1)
+let lastChar = fullName.slice(-1);
+
+let firstName = fullName.slice(0, fullName.indexOf(" "));
+let lastName = fullName.slice (fullName.indexOf(" ") + 1);
+
+console.log(firstName);
+console.log(lastName);
+console.log(firstChar);
+console.log(lastChar);
+
+const email = "Hejsan@gmail.com";
+
+let username = email.slice(0, email.indexOf("@"));
+let extension = email.slice(email.indexOf("@"));
+
+console.log(username);
+console.log(extension);
