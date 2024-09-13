@@ -382,20 +382,45 @@ myButton.onclick = function(){
 
 // ------ NO METHOD CHAINING ------
 
-let username = window.prompt("Enter your username");
+// let username = window.prompt("Enter your username");
 
-username = username.trim();
-let letter = username.charAt(0);
-letter = letter.toUpperCase();
+// username = username.trim();
+// let letter = username.charAt(0);
+// letter = letter.toUpperCase();
 
-let extraChars = username.slice(1);
-extraChars = extraChars.toLowerCase();
-username = letter + extraChars;
+// let extraChars = username.slice(1);
+// extraChars = extraChars.toLowerCase();
+// username = letter + extraChars;
 
-console.log(username);
+// console.log(username);
 
 
 // -----  METHOD CHAINING -----
 
-username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
-console.log(username);
+// username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+// console.log(username);
+
+// logical operators = used to combine or manipulate boolean values
+//                      (true or false)
+
+//                      AND = &&
+//                      OR = ||
+//                      NOT = !
+
+// const temp = -250;
+
+// if(temp <= 0 || temp > 30){
+//     console.log("The weather is BAD");
+// }
+// else {
+//     console.log("The weather is GOOD");
+// }
+
+const isSunny = true;
+
+if(!isSunny){
+    console.log("It is CLOUDY");
+}
+else {
+    console.log("It is SUNNY");
+}
