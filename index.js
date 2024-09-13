@@ -229,34 +229,54 @@ myButton.onclick = function(){
 // .checked = property that determines the checked state of an 
 //             HTML checkbox or radio button element 
 
-const myCheckBox = document.getElementById("myCheckBox");
-const visaBtn = document.getElementById("visaBtn");
-const masterCardBtn = document.getElementById("masterCardBtn");
-const payPalBtn = document.getElementById("payPalBtn");
-const mySubmit = document.getElementById("mySubmit");
-const subResult = document.getElementById("subResult");
-const paymentResult = document.getElementById("paymentResult");
+// const myCheckBox = document.getElementById("myCheckBox");
+// const visaBtn = document.getElementById("visaBtn");
+// const masterCardBtn = document.getElementById("masterCardBtn");
+// const payPalBtn = document.getElementById("payPalBtn");
+// const mySubmit = document.getElementById("mySubmit");
+// const subResult = document.getElementById("subResult");
+// const paymentResult = document.getElementById("paymentResult");
 
-mySubmit.onclick = function(){
+// mySubmit.onclick = function(){
     
-    if(myCheckBox.checked){ 
-        subResult.textContent = `You are subscribed`;
-    }
-    else {
-        subResult.textContent = `You are not subscribed`;
-    }
+//     if(myCheckBox.checked){ 
+//         subResult.textContent = `You are subscribed`;
+//     }
+//     else {
+//         subResult.textContent = `You are not subscribed`;
+//     }
     
-    if(visaBtn.checked) {
-        paymentResult.textContent = `You are paying with Visa`;
-    }
-    else if (masterCardBtn.checked) {
-        paymentResult.textContent = `You are paying with Mastercard`;
-    } 
-    else if(payPalBtn.checked){
-        paymentResult.textContent = `You are paying with PayPal`;
-    } 
-    else {
-        paymentResult.textContent = `You must select a payment type`;
-    }
+//     if(visaBtn.checked) {
+//         paymentResult.textContent = `You are paying with Visa`;
+//     }
+//     else if (masterCardBtn.checked) {
+//         paymentResult.textContent = `You are paying with Mastercard`;
+//     } 
+//     else if(payPalBtn.checked){
+//         paymentResult.textContent = `You are paying with PayPal`;
+//     } 
+//     else {
+//         paymentResult.textContent = `You must select a payment type`;
+//     }
 
-}
+// }
+
+// ternary operator = a shortcut to if{} and else{} statements 
+                    //    helps to assign a variable based on a condition
+                    //    condition ? codeIfTrue : codeIfFalse;
+// shortcut to if statements
+// let age = 17;
+// let message = age >= 18 ? "You are an adult" : "You're a minor";
+// console.log(message)
+
+// let time = 9
+// let greeting = time < 12 ? "Good morning!" : "Good afternoon";
+// console.log(greeting)
+
+// let isStudent = false;
+// let message = isStudent ? "You are a student" : "You are not a student";
+// console.log(message)
+
+// let purchaseAmount = 130;
+// let discount = purchaseAmount >= 100 ? 10 : 0 
+// console.log(`Your total is ${purchaseAmount - purchaseAmount *(discount/100)}`);
