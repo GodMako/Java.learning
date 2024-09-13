@@ -1,0 +1,43 @@
+ /* #countLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+}
+
+#btnContainer {
+    text-align: center;
+}
+
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(113, 113, 243);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.buttons:hover{
+    background-color: rgb(19, 95, 95);
+} This is the increase reset decrease style.css */
+
+/* Random number generator ------------------------------------
+body {
+    font-family: Verdana;
+    text-align: center;
+}
+
+#myButton {
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.myLabels {
+    font-size: 3em;
+}
+
+----------------------------------------------------------- */
