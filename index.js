@@ -338,7 +338,7 @@ myButton.onclick = function(){
 
 // string methods = allow you to manipulate and work with text (strings)
 
-let userName = "Mako";
+// let userName = "Mako";
 
 // userName.indexOf("o");
 // console.log(userName.indexOf("o"));
@@ -351,28 +351,51 @@ let userName = "Mako";
 // string slicing = creating a substring   
 //                  from a portion of another String
 
-                 string.slice(start, end)
+//                  string.slice(start, end)
 
-const fullName = "Broseph Code";
+// const fullName = "Broseph Code";
 
-let firstName = fullName.slice(0, 3);
-let lastName = fullName.slice(4);
+// let firstName = fullName.slice(0, 3);
+// let lastName = fullName.slice(4);
 
-let firstChar = fullName.slice(0, 1)
-let lastChar = fullName.slice(-1);
+// let firstChar = fullName.slice(0, 1)
+// let lastChar = fullName.slice(-1);
 
-let firstName = fullName.slice(0, fullName.indexOf(" "));
-let lastName = fullName.slice (fullName.indexOf(" ") + 1);
+// let firstName = fullName.slice(0, fullName.indexOf(" "));
+// let lastName = fullName.slice (fullName.indexOf(" ") + 1);
 
-console.log(firstName);
-console.log(lastName);
-console.log(firstChar);
-console.log(lastChar);
+// console.log(firstName);
+// console.log(lastName);
+// console.log(firstChar);
+// console.log(lastChar);
 
-const email = "Hejsan@gmail.com";
+// const email = "Hejsan@gmail.com";
 
-let username = email.slice(0, email.indexOf("@"));
-let extension = email.slice(email.indexOf("@"));
+// let username = email.slice(0, email.indexOf("@"));
+// let extension = email.slice(email.indexOf("@"));
+
+// console.log(username);
+// console.log(extension);
+
+// Method chaining = Calling onemethod after another
+//                   is one continous line of code.
+
+// ------ NO METHOD CHAINING ------
+
+let username = window.prompt("Enter your username");
+
+username = username.trim();
+let letter = username.charAt(0);
+letter = letter.toUpperCase();
+
+let extraChars = username.slice(1);
+extraChars = extraChars.toLowerCase();
+username = letter + extraChars;
 
 console.log(username);
-console.log(extension);
+
+
+// -----  METHOD CHAINING -----
+
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+console.log(username);
