@@ -178,20 +178,38 @@ myButton.onclick = function(){
 
 // if statements //
 
-let age = 15;
-let hasLicense = true;
+// let age = 18;
+// let hasLicense = true;
 
-if(age >= 16){
-    console.log("You are old enough to drive");
+// if(age >= 16){
+//     console.log("You are old enough to drive");
 
-    if(hasLicense){
-        console.log("You have your license");
-    } else {
-        console.log("You do not have your license");
-    } 
-}
-    else {
-        console.log("You must be 16+ to have a license");    
-}
+//     if(hasLicense){
+//         console.log("You have your license");
+//     } else {
+//         console.log("You do not have your license");
+//     } 
+// }
+//     else {
+//         console.log("You must be 16+ to have a license");    
+// }
 
 
+// let age = 0;
+
+// if (age >= 100) {
+//     console.log("You are TOO old to enter this site");
+// }
+// else if(age == 0) {
+//     console.log("You can`t enter. You were just born");
+// }
+
+// else if(age == 18) {
+//     console.log("You are old enough to enter this site");
+// }
+// else if(age <0) {
+//     console.log("Your age can`t be below 0");
+// } 
+// else {
+//     console.log("You must be enter 18+ to enter this site");
+// }
